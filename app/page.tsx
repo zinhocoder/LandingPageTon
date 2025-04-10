@@ -34,7 +34,7 @@ import {
   Award,
   BadgeDollarSign,
 } from "lucide-react"
-// Adicione estas importações no topo do arquivo, logo após as importações existentes
+
 import { useState, useEffect, useRef } from "react"
 
 // Componente para o seletor de planos
@@ -509,14 +509,123 @@ export default function TonLandingPage() {
             </div>
 
             {/* Brands */}
+            {/* Brands Carousel */}
             <div className="mt-12 md:mt-16 border-t border-gray-200 pt-6 md:pt-8">
               <p className="text-center text-xs md:text-sm text-gray-500 mb-4 md:mb-6">
                 UTILIZADA POR MILHARES DE EMPRESAS EM TODO O BRASIL
               </p>
-              <div className="flex flex-wrap justify-center gap-x-8 md:gap-x-12 gap-y-4 md:gap-y-6 grayscale opacity-70">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <div key={i} className="h-6 md:h-8 w-16 md:w-24 bg-gray-200 rounded"></div>
-                ))}
+              <div className="relative overflow-hidden w-full">
+                <div className="logos-slide-track flex animate-scroll">
+                  {/* Logos das empresas */}
+                  <div className="flex items-center justify-center mx-4 md:mx-8 min-w-[120px] md:min-w-[150px]">
+                    <Image
+                      src="/images/logo-magalu.png"
+                      alt="Magazine Luiza"
+                      width={120}
+                      height={40}
+                      className="h-8 md:h-10 w-auto object-contain"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center mx-4 md:mx-8 min-w-[120px] md:min-w-[150px]">
+                    <Image
+                      src="/images/logo-lojas-americanas-2048.png"
+                      alt="Americanas"
+                      width={120}
+                      height={80}
+                      className="h-16 md:h-10 w-auto object-contain"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center mx-4 md:mx-8 min-w-[120px] md:min-w-[150px]">
+                    <Image
+                      src="/images/logo-renner.png"
+                      alt="Renner"
+                      width={120}
+                      height={40}
+                      className="h-8 md:h-10 w-auto object-contain"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center mx-4 md:mx-8 min-w-[120px] md:min-w-[150px]">
+                    <Image
+                      src="/images/logo-riachuelo.png"
+                      alt="Riachuelo"
+                      width={120}
+                      height={40}
+                      className="h-8 md:h-10 w-auto object-contain"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center mx-4 md:mx-8 min-w-[120px] md:min-w-[150px]">
+                    <Image
+                      src="/images/logo-carrefour.png"
+                      alt="Carrefour"
+                      width={120}
+                      height={40}
+                      className="h-8 md:h-10 w-auto object-contain"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center mx-4 md:mx-8 min-w-[120px] md:min-w-[150px]">
+                    <Image
+                      src="/images/logo-natura.png"
+                      alt="Natura"
+                      width={120}
+                      height={40}
+                      className="h-8 md:h-10 w-auto object-contain"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center mx-4 md:mx-8 min-w-[120px] md:min-w-[150px]">
+                    <Image
+                      src="/images/magalu-logo-0.png"
+                      alt="Magazine Luiza"
+                      width={120}
+                      height={40}
+                      className="h-8 md:h-10 w-auto object-contain"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center mx-4 md:mx-8 min-w-[120px] md:min-w-[150px]">
+                    <Image
+                      src="/images/lojas-americanas.png"
+                      alt="Americanas"
+                      width={120}
+                      height={40}
+                      className="h-8 md: h-10 w-auto object-contain"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center mx-4 md:mx-8 min-w-[120px] md:min-w-[150px]">
+                    <Image
+                      src="/images/logo-renner-2048.png"
+                      alt="Renner"
+                      width={120}
+                      height={40}
+                      className="h-8 md:h-10 w-auto object-contain"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center mx-4 md:mx-8 min-w-[120px] md:min-w-[150px]">
+                    <Image
+                      src="/images/Riachuelo_logo_2013.png"
+                      alt="Riachuelo"
+                      width={120}
+                      height={40}
+                      className="h-8 md:h-10 w-auto object-contain"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center mx-4 md:mx-8 min-w-[120px] md:min-w-[150px]">
+                    <Image
+                      src="/images/carrefour-logo-1.png"
+                      alt="Carrefour"
+                      width={120}
+                      height={40}
+                      className="h-8 md:h-10 w-auto object-contain"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center mx-4 md:mx-8 min-w-[120px] md:min-w-[150px]">
+                    <Image
+                      src="/images/natura-108.png"
+                      alt="Natura"
+                      width={120}
+                      height={40}
+                      className="h-8 md:h-10 w-auto object-contain"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -944,7 +1053,7 @@ export default function TonLandingPage() {
             <div className="mt-12 md:mt-16 bg-[#F9FEFC] rounded-3xl p-6 md:p-8 border border-[#E6F9F1] max-w-4xl mx-auto">
               <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
                 <div className="md:w-1/2">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Ainda com dúvidas?</h3>
+                  <h3 className="text-xl md:text-2xl font-bold mb-3  md:mb-4">Ainda com dúvidas?</h3>
                   <p className="text-sm md:text-base text-gray-600 mb-4 md:mb-6">
                     Nossos consultores estão prontos para ajudar você a escolher o plano ideal para o seu negócio.
                   </p>
@@ -1198,7 +1307,9 @@ export default function TonLandingPage() {
                     </div>
                     <div>
                       <h3 className="font-bold text-base md:text-lg">Endereço</h3>
-                      <p className="text-sm md:text-base text-gray-600">AV. Doutora Ruth Cardoso, 20º andar, Pinheiros, São Paulo, SP.</p>
+                      <p className="text-sm md:text-base text-gray-600">
+                        AV. Doutora Ruth Cardoso, 20º andar, Pinheiros, São Paulo, SP.
+                      </p>
                       <p className="text-xs md:text-sm text-gray-500 mt-1">CEP: 05425-070</p>
                     </div>
                   </div>
@@ -1493,4 +1604,3 @@ export default function TonLandingPage() {
     </div>
   )
 }
-
